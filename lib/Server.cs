@@ -160,6 +160,7 @@ namespace mooftpserv
         /// </summary>
         public void Stop()
         {
+            if (socket == null) return;
             socket.Stop();
         }
 
